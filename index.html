@@ -4,40 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MC Design</title>
-<!--Some TEXT FONTS-->
-    <style type="text/css">
 
+    <style type="text/css">
         @font-face {
             font-family: 'Baskerville';
-            src: url('Fonts/Baskerville.ttc') format('truetype');
+            src: local('Baskerville'),
+                 local('Baskerville Old Face'),
+                 url('Fonts/Baskerville.ttc') format('truetype');
             font-weight: normal;
             font-style: normal;
         }
 
         @font-face {
             font-family: 'Minion Pro';
-            src: url('Fonts/MinionPro-Regular.otf') format('opentype');
+            src: local('Minion Pro'),
+                 local('MinionPro-Regular'),
+                 url('Fonts/MinionPro-Regular.otf') format('opentype');
             font-weight: normal;
             font-style: normal;
         }
+    </style>
 
-        
+<!--The Media Queries-->
+    <style>
+        /*Desktop*/
+        @media only screen and (min-width: 960px) {
+            .container {
+                width: 960px;
+            }
+
+            .map {
+                height: 400px;
+            }
+        }
+
+        /*Tablet*/
+        @media only screen and (max-width: 960px) {
+            .container {
+                width: 600px;
+            }
+        }
+
+        /*Mobile*/
+        @media only screen and (max-width: 600px) {
+            .container {
+                width: 100%;
+            }
+        }
+
+
+
     </style>
 </head>
 <body>
-    <!--Thee Start of The Email-->
+    <!--Start of The Email-->
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
             <td>
-                <!--Start of The Container--> 
-                <table width="600" align="center" border="0" cellspacing="0" cellpadding="0">
-                    <!--Start of The Header Row--> 
+                <!--Start of The Container-->
+                <table class="container" width="600" align="center" border="0" cellspacing="0" cellpadding="0">
+                    
+                    <!--Start of The Header Row-->
                     <tr>
                         <td style="padding: 0;">
                             <table width="100%" border="0" cellspacing="0" cellpadding="0">
                                 <tr>
                                     <td style="border-bottom: 8px solid #0D4C9A; padding: 0;">
-                                        <img src="Images/logo.jpg" alt="Logo" width="100%" style="display: block;">
+                                        <img src="https://github.com/VincinChristmas/Agency-email/blob/main/Images/Logo.jpg?raw=true" alt="Logo" width="100%" style="display: block;">
                                     </td>
                                 </tr>
                             </table>
@@ -46,56 +79,48 @@
                     <!--End of The Header Row-->
 
                     <!--Start of Head Headline-->
-<tr>
-    <td style="padding: 0;">
-        <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-                <!--Head Headline left column-->
-                <td width="50%" valign="top" style="padding-top: 50px; padding-left: 30px;">
-                    <h1 style="color: #0D49CA; font-family: 'Baskerville', 'Times New Roman', Georgia, serif; font-weight: 400;">Most Marketing <br> <span style="font-style: italic;">Isn't a Campaign</span></h1>
+                    <tr>
+                        <td style="padding: 0;">
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <!--Head Headline left column-->
+                                    <td width="50%" valign="top" style="padding-top: 50px; padding-left: 30px; font-family: Arial, Helvetica, sans-serif; font-size: 16px; line-height: 24px; color: #333333;">
+                                        <h1 style="color: #0D49CA; font-family: 'Baskerville', 'Times New Roman', Georgia, serif; font-weight: 400; margin: 0; padding: 0; line-height: 40px;">Most Marketing <br> <span style="font-style: italic;">Isn't a Campaign</span></h1>
 
-                                        <p style="color: #2b2728; font-family: 'Arial', 'Times New Roman', Georgia, serif; font-size: 13.5px; font-weight: 500; line-height: 1.3;">It’s menus, sales pieces, event materials, 
-                                            and a constant flow of things that need to be 
-                                            designed quickly, correctly, and creatively. </p>
+                                        <p style="color: #2b2728; font-family: Arial, Helvetica, sans-serif; font-size: 13.5px; font-weight: 500; line-height: 18px; margin: 0; padding: 16px 0 0 0;">It’s menus, sales pieces, event materials, and a constant flow of things that need to be designed quickly, correctly, and creatively.</p>
 
-                                           <p style="color: #2b2728; font-family: 'Arial', 'Times New Roman', Georgia, serif; font-size: 18px; font-weight: 600; line-height: 1.5; margin-top: 30px;">THAT’S WHAT OUR DESIGN<br>
+                                        <p style="color: #2b2728; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-weight: 600; line-height: 27px; margin: 0; padding: 30px 0 0 0;">THAT’S WHAT OUR DESIGN<br>
                                             <span style="border-bottom: 2px solid #423e3f; padding-bottom: 9px;">TEAM DOES EVERY DAY.</span></p>
 
-                    
+                                        <p style="font-size: 14px; font-family: Arial, Helvetica, sans-serif; margin: 0; padding: 45px 0 0 0;"><span style="color: #2b2728; font-weight: 600;">GOT A PROJECT?</span> SEND IT OUR WAY.</p>
+                                        <p style="color: #0D4C9A; font-family: Arial, Helvetica, sans-serif; font-weight: 600; line-height: 27px; margin: 0; padding: 13px 0 0 0;">>> SEE OUR DECK & PRICING <br>>> SUBMIT A PROJECT <br>>> EMAIL US <span style="font-size: 15px; font-family: 'Brush Script MT', 'Monotype Corsiva', 'Comic Sans MS', cursive;">(we take project via email too)</span></p>
+                                    </td>
 
-                                            <p style="font-size: 18px; font-family: 'Arial', 'Times New Roman', Georgia, serif; margin-top: 45px; padding:0; margin-bottom: 0;"><span style="color: #2b2728; font-weight: 600;">GOT A PROJECT?</span> SEND IT OUR WAY.</p>
-                                            <p style="color:#0D4C9A; padding:0; margin-bottom: 0; margin-top: 13px; font-family: 'Arial', 'Times New Roman', Georgia, serif; font-weight: 600; line-height: 1.5; ">>> SEE OUR DECK & PRICING <br>>> SUBMIT A PROJECT <br>>> EMAIL US <span style="font-size: 16px; font-weight: 200; font-family: 'Brush Script MT', 'Monotype Corsiva', 'Comic Sans MS', cursive; ">(we take project via email too)</span></p>
-                                            
-                </td>
-                
-                <!--Head Headline right column-->
-                <td width="50%" valign="top" style="padding: 0;">
-                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-                        <tr>
-                            <td>
-                                <img src="Images/map.jpeg" alt="Map" width="100%" style="display: block;">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding-top: 120px; font-size: 13.5px; font-weight: 600; line-height: 1.3; text-align: right;">
-                                &#11014; NEIGHBORHOOD MAP<br>
-                                <span>The St. Regis San Francisco</span>
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-    </td>
-</tr>
+                                    <!--Head Headline right column-->
+                                    <td width="50%" valign="top" style="padding: 0;">
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    <img class="map" src="https://github.com/VincinChristmas/Agency-email/blob/main/Images/map.jpeg?raw=true" alt="Map" width="100%" style="display: block;">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td style="padding-top: 120px; font-size: 13.5px; font-weight: 600; line-height: 18px; text-align: right;">
+                                                    &#11014; NEIGHBORHOOD MAP<br>
+                                                    <span>The St. Regis San Francisco</span>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <!--End of Head Headline-->
 
-<!--End of Head Headline-->
-                    
                 </table>
             </td>
         </tr>
-
     </table>
-    
 </body>
 </html>
